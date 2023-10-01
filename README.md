@@ -1,12 +1,11 @@
 # My Lovely Qtile configuration
 
-**Note** If you want to have the same configuration then you only need to copy the qtile file here and past it under your "Home/.config" directory.
-<a href='#'><img align="center" src="./qtile_walp.png" alt="qtilegk"></a>
-<a href='#'><img align="center" src="./wp2.png" alt="qtilegk"></a>
+**Note** If you want to have the same configuration then you only need to copy the qtile file here and past it under your "Home/.config" directory.</br>
+
+[![qtilegk](./qtile_walp.png)](#)
+[![qtilegk](./wp2.png)](#)
 
 ## KEYBINDS
-
-</div>
 
 <details>
 <summary><h3>Table</h3></summary>
@@ -49,16 +48,8 @@
 
 </details>
 
-<div align="left">
-
-div>
-
 ---
-
-<div align="center">
 
 #### Have a nice day!
 
 ## **BTW I USE ARCH**
-
-</div>
