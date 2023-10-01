@@ -1,19 +1,19 @@
 # My Lovely Qtile configuration
 
-**Note** If you want to have the same configuration then you only need to copy the qtile file here and past it under your "Home/.config" directory.</br>
+**Note**: If you want to have the same configuration, you only need to copy the qtile file here and paste it under your "Home/.config" directory.
 
 ![qtilegk](./qtile_walp.png)
-![qtilegk](./wp2.png)
+![qtilegk](.qtile/wp2.png)
 
 ## KEYBINDS
 
 <details>
-<summary><h3>Table</h3></summary>
+<summary>Table</summary>
 
 | Key                                                     | Bind                                            |
 | :------------------------------------------------------ | :---------------------------------------------- |
 |                                                         |                                                 |
-| Qtile Defaults                                          |                                                 |
+| **Qtile Defaults**                                      |                                                 |
 |                                                         |                                                 |
 | <kbd>super</kbd> + <kbd>h</kbd>                         | Move focus to left                              |
 | <kbd>super</kbd> + <kbd>l</kbd>                         | Move focus to right                             |
@@ -35,7 +35,7 @@
 | <kbd>super</kbd> + <kbd>Control</kbd> + <kbd>r</kbd>    | Restart Qtile                                   |
 | <kbd>super</kbd> + <kbd>Control</kbd> + <kbd>q</kbd>    | Shutdown Qtile                                  |
 |                                                         |                                                 |
-| Custom                                                  |                                                 |
+| **Custom**                                              |                                                 |
 |                                                         |                                                 |
 | <kbd>super</kbd> + <kbd>Return</kbd>                    | Launch Terminal                                 |
 | <kbd>super</kbd> + <kbd>w</kbd>                         | Close/Kill focused window                       |
