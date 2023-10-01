@@ -2,8 +2,8 @@
 
 **Note** If you want to have the same configuration then you only need to copy the qtile file here and past it under your "Home/.config" directory.</br>
 
-[![qtilegk](./qtile_walp.png)](#)
-[![qtilegk](./wp2.png)](#)
+![qtilegk](./qtile_walp.png)
+![qtilegk](./wp2.png)
 
 ## KEYBINDS
 
