@@ -53,13 +53,11 @@
 ## How to use my config
 
 if you have qtile then make sure the create a backup because I don't garantie you it will work exactly as mine.</br>
-`bash
-    git clone https://github.com/abdoulayegk/Qtile-cong.git
-    `
+` git clone https://github.com/abdoulayegk/Qtile-cong.git`
 </br>
 after you clone it then move the Qtile-cong directory </br>
-`     bash
-    mv qtile ~/.config/    `
+
+`mv qtile ~/.config`
 
 #### Have a nice day!
 
