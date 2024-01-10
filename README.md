@@ -59,6 +59,16 @@ after you clone it then move the Qtile-cong directory </br>
 
 `mv qtile ~/.config`
 
+## Error on arch linux **man** command:
+
+This is the error message that I got after running the command man ls: `man: can't execute most: No such file or directory
+man: command exited with status 255: LESS=-ix8RmPm Manual page bash(1) ?ltline %lt?L/%L.:byte %bB?s/%s..?e (END):?pB %pB\%.. (press h for help or q to quit)$PM Manual page bash(1) ?ltline %lt?L/%L.:byte %bB?s/%s..?e (END):?pB %pB\%.. (press h for help or q to quit)$ MAN_PN=bash(1) most`</br>
+
+- The solution was just to run this command:
+  `bash export MANPAGER=less `
+
+  link to the solution page [Archwiki](https://bbs.archlinux.org/viewtopic.php?id=178730)
+
 #### Have a nice day!
 
 ## **BTW I USE ARCH**
