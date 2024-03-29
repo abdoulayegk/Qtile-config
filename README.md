@@ -67,7 +67,10 @@ man: command exited with status 255: LESS=-ix8RmPm Manual page bash(1) ?ltline %
 - The solution was just to run this command:
   `bash export MANPAGER=less `
 
-  link to the solution page [Archwiki](https://bbs.archlinux.org/viewtopic.php?id=178730)
+  link to the solution page [Archwiki](https://bbs.archlinux.org/viewtopic.php?id=178730)<br>
+  I use this nice and beautiful terminal final manager [Yazi final manager](https://yazi-rs.github.io/docs/installation/) <br>
+
+  
 
 #### Have a nice day!
 
