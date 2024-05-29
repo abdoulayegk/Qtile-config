@@ -72,6 +72,9 @@ man: command exited with status 255: LESS=-ix8RmPm Manual page bash(1) ?ltline %
 
   ## Changing the Default Desktop Environment
   * Go to ``sudo nvim /etc/lightdm/lightdm.conf`` and search for **user-session=default** and CHANGE THIS to qtile
+ 
+# To Fix gnome right click and left click(touchpad)
+Run the following command: ``gsettings set org.gnome.desktop.peripherals.touchpad \ click-method areas`` and then done.
 
   
 
