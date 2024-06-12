@@ -71,29 +71,38 @@ man: command exited with status 255: LESS=-ix8RmPm Manual page bash(1) ?ltline %
   I use this nice and beautiful terminal final manager [Yazi final manager](https://yazi-rs.github.io/docs/installation/) <br>
 
 ## Must have packages for volume and brightness control
-`sudo pacman -S alsa-utils lxappearance brightnessctl`
+```
+$ sudo pacman -S alsa-utils lxappearance brightnessctl
+```
+
 ## Bluetooth connection
 1. `sudo pacman -S bluez bluez-utils blueman`
  2. `sudo systemctl start bluetooth`
   3. `sudo systemctl enable bluetooth
 `
 # To install and configer lightdm
-1. install [lightdm](https://github.com/NoiSek/Aether) with the following command ``` paru -S lightdm-webkit-theme-aether```
+1. install [lightdm](https://github.com/NoiSek/Aether) with the following command:
+``` 
+$ paru -S lightdm-webkit-theme-aether
+
+```
 2. Go to ```cd /etc/lightdm``` change default sessions to qtile then save exit
-3. Enable it with the following ```sudo systemctl start lightdm.service && sudo systemctl enable lightdm.service -f```.
+3. Enable it with the following
+``` $ sudo systemctl start lightdm.service && sudo systemctl enable lightdm.service -f```.
 4. Reboot.
 
 
 ## Others
 Install pip using pacman
-``
-sudo pacman -S python-pip
-``
+```
+$ sudo pacman -S python-pip
+
+```
 After this you need to install qtile dependencies
 1. `pip install dbus-next`
 
   ## Changing the Default Desktop Environment
-  * Go to ``sudo nvim /etc/lightdm/lightdm.conf`` and search for **user-session=default** and CHANGE THIS to qtile
+  * Go to ``` $ sudo nvim /etc/lightdm/lightdm.conf``` and search for **user-session=default** and CHANGE THIS to qtile
  
 # To Fix gnome right click and left click(touchpad)
 Run the following command: ``gsettings set org.gnome.desktop.peripherals.touchpad \ click-method areas`` and then done.
