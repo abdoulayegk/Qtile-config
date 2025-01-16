@@ -6,7 +6,7 @@ from libqtile.dgroups import simple_key_binder
 from time import sleep
 
 mod = "mod4"
-terminal = "alacritty"
+terminal = "kitty"
 
 # █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █▀
 # █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ ▄█
@@ -94,9 +94,14 @@ keys = [
         lazy.spawn("brightnessctl s 10%-"),
         desc="brightness Down",
     ),
-    Key([mod], "b", lazy.spawn("brave"), desc="Web Browser"),
+    Key([mod], "o", lazy.spawn("firefox"), desc="Web Browser"),
     Key([mod], "h", lazy.spawn("roficlip"), desc="clipboard"),
     Key([mod], "s", lazy.spawn("flameshot gui"), desc="Screenshot"),
+    Key([], "Print", lazy.spawn("flameshot gui"), desc="Screenshot"),
+
+     Key(
+        [mod], "p", lazy.spawn("sh -c ~/.config/qtile/power-menu.sh"), desc="powermenu"
+    ),
 ]
 
 

@@ -139,6 +139,23 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 
+	-- install without yarn or npm
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
+		end,
+	})
+
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
+
 	--#nvim sunrround
 	use({
 		"kylechui/nvim-surround",

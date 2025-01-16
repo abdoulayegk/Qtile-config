@@ -4,12 +4,12 @@ local servers = {
 	"html",
 	"tsserver",
 	"pyright",
-	-- "bashls",
-	-- "jsonls",
+	"jsonls",
 	"clangd",
-	-- "mypy",
-	-- "ruff",
-	-- "black",
+	-- "stylua",
+	-- "prettier",
+	-- "makrdwnlint",
+	-- "clangd-format",
 }
 
 local settings = {
