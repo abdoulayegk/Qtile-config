@@ -8,6 +8,23 @@ from time import sleep
 mod = "mod4"
 terminal = "kitty"
 
+# Define your layouts
+keyboard_layouts = [
+    "us",  # English (US)
+    "fr",  # French
+    # Add more layouts as needed
+]
+
+# Initialize current layout index
+current_layout = 0
+
+
+def next_keyboard_layout(qtile):
+    global current_layout
+    current_layout = (current_layout + 1) % len(keyboard_layouts)
+    qtile.cmd_spawn(f"setxkbmap {keyboard_layouts[current_layout]}")
+
+
 # █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █▀
 # █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ ▄█
 
@@ -95,13 +112,17 @@ keys = [
         desc="brightness Down",
     ),
     Key([mod], "o", lazy.spawn("firefox"), desc="Web Browser"),
+    Key([mod], "c", lazy.spawn("google-chrome-stable"), desc="Web Browser"),
     Key([mod], "h", lazy.spawn("roficlip"), desc="clipboard"),
     Key([mod], "s", lazy.spawn("flameshot gui"), desc="Screenshot"),
     Key([], "Print", lazy.spawn("flameshot gui"), desc="Screenshot"),
-
-     Key(
+    Key(
         [mod], "p", lazy.spawn("sh -c ~/.config/qtile/power-menu.sh"), desc="powermenu"
     ),
+    # Add this to your Key bindings
+    # Your existing key bindings...
+    # Add a key to switch layouts (for example, Win+Space)
+    Key([mod], "space", lazy.function(next_keyboard_layout)),
 ]
 
 
